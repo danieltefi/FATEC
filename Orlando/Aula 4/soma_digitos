@@ -1,0 +1,10 @@
+numero_digitado = int(input('Digite um número: '))
+n = numero_digitado
+invertido = 0
+
+while n > 0:
+    digito = n % 10
+    invertido = (invertido * 10) + digito
+    n = n // 10
+
+print(f'O inverso dos dígitos de {numero_digitado} é: {invertido}')
